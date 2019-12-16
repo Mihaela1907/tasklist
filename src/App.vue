@@ -17,12 +17,17 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: #abc;
+}
 #app {
+  width: 60%;
+  max-width: 45rem;
+  padding: 1em;
+  margin: 1em auto;
+  overflow: auto;
+  background-color: white;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-  margin-left: 100px;
+  
 }
 </style>
