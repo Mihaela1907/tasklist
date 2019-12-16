@@ -1,9 +1,11 @@
 <template>
   <div id="todoApp">
+    
     <form name="todo-form" method="post" action v-on:submit.prevent="addTask">
       <input name="add-todo" type="text" v-model="addTodoInput" v-bind:class="{error: hasError}" />
       <button type="submit">Add task</button>
-    </form>
+    </form> 
+
     <div class="todo-lists" v-if="lists.length">
       <ul>
         <li v-for="(list,index) in lists" :key="index">
