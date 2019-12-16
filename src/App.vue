@@ -17,9 +17,11 @@ export default {
 </script>
 
 <style>
+
 body{
   background-color: #abc;
 }
+
 #app {
   width: 60%;
   max-width: 45rem;

@@ -30,9 +30,11 @@ export default {
       hasError: false
     };
   },
+
   components: {
     Task
   },
+
   methods: {
     addTask() {
       if (!this.addTodoInput) {
@@ -71,31 +73,33 @@ export default {
 <style lang="scss" scoped>
 :root {
   font-family: Arial;
-   background-color: #abc;
+  background-color: #abc;
 }
+
+$primary-color: #3498db;
 
 input[type="text"] {
   width: 77%;
   font-size: 16px;
   padding: 8px;
   border: 1px solid #c4c4c4;
+  &.error{
+    border: 1px solid red;
+  }
 }
 
 button {
-  background: #3498db;
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	background: $primary-color;
+	background-image: linear-gradient(to bottom, $primary-color, #2980b9);
+	color: #ffffff;
+	font-size: 16px;
+	padding: 8px 20px;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background: #3cb0fd;
+		background-image: linear-gradient(to bottom, #3cb0fd, $primary-color);
+	}
+}
 
-  color: #ffffff;
-  font-size: 16px;
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-}
-button:hover {
-  background: #3cb0fd;
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-}
-input[type="text"].error {
-  border: 1px solid red;
-}
 </style>
